@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block title %}Sign in{% endblock %}
+
+
+{% block body %}
+<form method='POST'>
+    <div class="loginBox">
+        <input
+                type="text"
+                class="form-control"
+                id="username"
+                name="username"
+                placeholder="Username"
+        />
+        <br>
+        <div class="centre">
+            <button type="submit" class="btn btn-primary" style="width:100px">Play</button>
+        </div>
+    </div>
+</form>
+
+{% endblock %}
+
+{% block style %}
+.loginBox{
+background-color: white;
+width: 300px;
+height: 170px;
+border: 1px solid black;
+padding: 50px;
+margin: 20px;
+
+margin: 0;
+position: absolute;
+top: 50%;
+left: 50%;
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+}
+
+input[type="text"]{
+text-align: center;
+}
+
+.centre{
+margin: 0;
+position: absolute;
+left: 50%;
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+}
+
+
+{% endblock %}
